@@ -1,6 +1,6 @@
 <?php
 function ShowMonth($month=1){
-
+    
     if ($month < 1 || $month > 12) {
         echo("Введите значение месяца
         в интервале от 1 до 12");
@@ -18,7 +18,7 @@ function ShowMonth($month=1){
     function ShowTableForMonth($m){
 
         if (isset($_POST['btnShow'])) {
-            echo '$m = '.$m.'</br>';
+            echo '$m = '.$m.'</br>';    // FIX
     
             $date = "2018-$m-01";
             $endDate = "2018-$m-".date('t', strtotime($date));

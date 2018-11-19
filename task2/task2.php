@@ -12,11 +12,16 @@
 </head>
 <body>
     <form action="task2.php" method="POST">
-
-    <button type="submit" name="btnShow">Показать</button>
+        <label for="month">Введите номер месяца:</label>
+        <input type="text" name="month">
+        <button type="submit" name="btnShow">Показать</button>
     </form>
 
-    <?php ShowMonth(11); ?>
+    <?php 
+        if (isset($_POST['btnShow'])) {
+            ShowMonth($_POST['month']);
+        }
+    ?>
     
 </body>
 </html>
