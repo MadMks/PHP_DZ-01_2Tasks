@@ -1,0 +1,33 @@
+.card{
+    margin: 20px 0;
+}
+
+
+/* task1 */
+
+
+/* task2 */
+h2{
+    margin: 20px 0;
+}
+
+.blockForTable{
+    display: inline-block;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    padding: 6px 10px;
+}
+
+.tableMonth td{
+    padding: 4px;
+}
+
+.trHeader td{
+    font-weight: bold;
+    border-bottom: 1px solid #cccccc;
+}
+
+.trHeader td:nth-child(6),
+.trHeader td:nth-child(7){
+    color: red;
+}
